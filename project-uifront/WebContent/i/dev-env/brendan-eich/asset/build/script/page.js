@@ -1,0 +1,1 @@
+require.config({}),require(["jquery","global","picturefill"],function(a,b,c){a(document).ready(function(){c.paint()})});
