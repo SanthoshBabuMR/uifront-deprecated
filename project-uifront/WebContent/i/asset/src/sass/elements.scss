@@ -1,0 +1,27 @@
+@import '_config';
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+  
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+a,
+a:link {
+  text-decoration: none;
+  @include transition(compact(all 0.3s));
+  
+  &:focus,
+  &:hover {
+    
+  }    
+  
+  &:active {
+  }
+}
+
+img {
+  max-width: 100%;
+}

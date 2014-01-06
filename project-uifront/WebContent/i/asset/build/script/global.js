@@ -1,0 +1,1 @@
+require(["jquery","elements"],function(a,b){a(document).ready(function(){a(b.site_navigation_container).on("click",b.nav_hook,function(){"0px"!=a(b.site_nav).css("height")?a(b.site_nav).css("height","0px"):a(b.site_nav).css("height",39*a(b.site_nav).children.length+"px")})})});

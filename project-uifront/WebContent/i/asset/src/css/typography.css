@@ -1,0 +1,9 @@
+/* line 3, ../sass/typography.scss */
+html {
+  font-size: 13px;
+}
+
+/* line 6, ../sass/typography.scss */
+body {
+  font: 1em/1.5 arial, verdana;
+}

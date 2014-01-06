@@ -1,0 +1,13 @@
+{
+	
+	"name": "uifront",
+	"description": "uifront.com - personal blog on web technologies",
+	"keywords": "html, css, javascript",
+	"author": "santhosh babu",
+	
+	"siteAsset": "/i/asset/src",
+	"siteAssetMin": "/i/asset/build",
+	"pageAsset": "asset/src",
+	"pageAssetMin": "asset/build"
+	
+}

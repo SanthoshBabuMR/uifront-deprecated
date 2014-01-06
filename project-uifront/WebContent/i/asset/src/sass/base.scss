@@ -1,0 +1,85 @@
+@import '_config';
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+/* site navigation begin */
+.site-navigation {
+  background: rgba(0, 0, 0, 0.85);
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  li {
+    @include box-shadow(rgba(255, 255, 255, .3) 0 1px 0, rgba(0, 0, 0, 1) 0 -1px 0px inset);
+    a,
+    a:link {
+      display: block;
+      padding: 10px;
+      color: rgba(255, 255, 255, .9);
+      
+      &:focus,
+      &:hover {
+        color: rgba(0, 0, 0, 0.9);
+        background: rgba(255, 255, 255, .95);
+        @include box-shadow(rgba(0, 0, 0, .3) 0 0 8px inset, rgba(0, 0, 0, 1) 0 0 2px);
+      }
+      
+      &:active {
+        color: rgba(255, 255, 255, 1);
+        background: rgba(0, 194, 255, 0.91);
+        @include box-shadow(rgba(0, 0, 0, .3) 0 0 8px inset, rgba(0, 0, 0, 1) 0 0 2px);
+      }
+    }
+  }
+  
+  .name {
+     a {
+       margin-right: 60px;
+     }
+    
+    .nav-hook {
+      float: right;
+      height: 39px;
+      width: 60px;
+      text-align: center;
+      background: rgba(255, 255, 255, 1);
+      cursor: pointer;
+      @include transition(compact(all 0.3s));
+      @include box-shadow(rgba(255, 255, 255, .3) 0 1px 0, rgba(0, 0, 0, 1) 0 -1px 0px inset);
+      
+      &:after,
+      &:before{
+        content: '';
+        display: block;
+        @include box-shadow(rgba(0, 194, 255, 0.91) 0 2px 0, rgba(0, 194, 255, 0.91) 0 2px 0px inset);
+        height: 8px;
+        width: 24px;
+        margin: 0 auto;
+      }
+
+      &:before {
+       margin-top: 10px;
+      }
+      
+      &:focus,
+      &:hover {
+        
+      }
+    }
+  }
+  
+  .nav {
+    height: 0;
+    overflow: hidden;
+    @include transition(compact(all 0.3s));
+  }  
+  
+  &.show-nav .nav{
+    /*height: 78px;*/
+    /*currently handled using js from global.js*/
+  }
+}
+/* site navigation end */
