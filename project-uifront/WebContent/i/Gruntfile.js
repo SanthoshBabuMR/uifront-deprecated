@@ -125,8 +125,13 @@ module.exports = function (grunt) {
     copy: {
       pageImage: {
         files: [
-          {expand: true, cwd: page.currentDocument + '/asset/src/image/', src: ['**'], dest: page.currentDocument + '/asset/build/image/' },
+          {expand: true, cwd: page.currentDocument + '/asset/src/image/', src: ['**'], dest: page.currentDocument + '/asset/build/image/' }
         ]
+      },
+      template: {
+    	files: [
+	      {expand: true, cwd: 'template/html-template/', src: ['**'], dest: 'dev-env/'+ page.currentDocument +'/' }
+	    ] 
       }
     }
   });

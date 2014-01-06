@@ -1,6 +1,8 @@
 
   <footer class="site-footer">
   <!-- site-footer begin -->
-    <p>&copy; UIFront 2014</p>
+    <div class="container">
+      <p>&copy; UIFront 2014</p>
+    </div>
   <!-- site-footer end -->  
   </footer>

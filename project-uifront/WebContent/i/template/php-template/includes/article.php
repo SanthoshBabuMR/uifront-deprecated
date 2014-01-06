@@ -11,7 +11,7 @@
         <div class="page-header">
         <!-- page-header begin -->
           <h1><?php echo $articleHeading?></h1>
-          <span class="pubdate"><?php echo $articlePubdate?></span>
+          <span class="pubdate"><?php echo $articlePubDate?></span>
         <!-- page-header end -->
         </div>
         
