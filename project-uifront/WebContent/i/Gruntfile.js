@@ -129,8 +129,9 @@ module.exports = function (grunt) {
         ]
       },
       template: {
+    	dot: true,
     	files: [
-	      {expand: true, cwd: 'template/html-template/', src: ['**'], dest: 'dev-env/'+ page.currentDocument +'/' }
+	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: 'dev-env/'+ page.currentDocument +'/' }
 	    ] 
       }
     }
