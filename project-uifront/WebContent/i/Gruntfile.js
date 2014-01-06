@@ -2,6 +2,9 @@ module.exports = function (grunt) {
   'use strict';
   var page = grunt.file.readJSON('config/page.json');
 
+  var pageFullPath = page.srcPath + '/' + page.srcDocument;
+  var pageName = page.srcDocument;
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     connect: {
@@ -45,9 +48,9 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: page.currentDocument + '/asset/src/script/',
+          cwd: pageFullPath + '/asset/src/script/',
           src: ['**/*.js'],
-          dest: page.currentDocument + '/asset/build/script',
+          dest: pageFullPath + '/asset/build/script',
         }]
       }
     },
@@ -60,14 +63,14 @@ module.exports = function (grunt) {
       },
       compileDoc: {
         options: {
-          sassDir: [page.currentDocument + '/asset/src/sass/'],
-          cssDir: [page.currentDocument + '/asset/src/css/']
+          sassDir: [pageFullPath + '/asset/src/sass/'],
+          cssDir: [pageFullPath + '/asset/src/css/']
         }
       }
     },
     watch: {
       compileSass: {
-        files: ['asset/src/sass/*.scss', page.currentDocument + '/asset/src/sass/*.scss'],
+        files: ['asset/src/sass/*.scss', pageFullPath + '/' + pageFullPath + '/asset/src/sass/*.scss'],
         tasks: ['compass'],
         options: {
           livereload: true,
@@ -117,21 +120,21 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           src: ['**.{jpg,gif,png}'],
-          cwd: page.currentDocument + '/asset/src/hidef-image/',
-          custom_dest: page.currentDocument + '/asset/src/image/{%= name %}/'
+          cwd: pageFullPath + '/asset/src/hidef-image/',
+          custom_dest: pageFullPath + '/asset/src/image/{%= name %}/'
         }]
       }
     },
     copy: {
       pageImage: {
         files: [
-          {expand: true, cwd: page.currentDocument + '/asset/src/image/', src: ['**'], dest: page.currentDocument + '/asset/build/image/' }
+          {expand: true, cwd: pageFullPath + '/asset/src/image/', src: ['**'], dest: pageFullPath + '/asset/build/image/' }
         ]
       },
       template: {
     	dot: true,
     	files: [
-	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: 'dev-env/'+ page.currentDocument +'/' }
+	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: 'dev-env/'+ pageName +'/' }
 	    ] 
       }
     }
