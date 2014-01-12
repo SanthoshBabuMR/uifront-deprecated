@@ -7,6 +7,7 @@
   $meta = "
   ";
   $css = "
+  <link rel=\"stylesheet\" href=\"$pageAsset/css/page.css\" />
   ";
   $script = "
   <script src=\"$siteAsset/script/lib/require.js\"></script>

@@ -27,7 +27,8 @@ module.exports = function (grunt) {
         files: {
           'asset/build/css/global.css': ['asset/src/css/global.css'],
           // specify current document path for cssmin
-          'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
+		  //'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
+		  'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
         }
       }
     },

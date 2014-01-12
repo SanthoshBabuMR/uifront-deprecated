@@ -37,7 +37,7 @@
             </div>
             <div class="col-sm-6">
               <a href="http://brendaneich.com/">
-                brendaneich.com/
+                brendaneich.com
               </a>
             </div>
             
@@ -68,7 +68,7 @@
 <div class="work">
   <div class="container">
     <h2 class="title">
-      Work
+      Contribution
     </h2>
     <div class="row">
       <div class="col-xs-12">
