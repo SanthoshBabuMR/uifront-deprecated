@@ -1,0 +1,100 @@
+/* line 5, ../sass/page.scss */
+.page-header {
+  border-bottom: 1px solid #CCCCCC;
+}
+/* line 7, ../sass/page.scss */
+.page-header .page-title {
+  font-size: 2em;
+}
+/* line 10, ../sass/page.scss */
+.page-header .pubdate {
+  color: #999;
+}
+
+/* line 15, ../sass/page.scss */
+.about {
+  padding-bottom: 15px;
+}
+/* line 20, ../sass/page.scss */
+.about .left-panel div[class*="col"] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #CCCCCC;
+}
+/* line 31, ../sass/page.scss */
+.about .right-panel figure img {
+  -webkit-box-shadow: black 0 1px 3px 1px;
+  -moz-box-shadow: black 0 1px 3px 1px;
+  box-shadow: black 0 1px 3px 1px;
+  -webkit-transform: scale(0.95, 0.95);
+  -moz-transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  -o-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -o-transition: all 0.45s;
+  transition: all 0.45s;
+}
+/* line 36, ../sass/page.scss */
+.about .right-panel figure img:hover {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* line 46, ../sass/page.scss */
+h2.title {
+  font-size: 1.5em;
+  padding: 7px 0;
+}
+
+/* line 52, ../sass/page.scss */
+.work {
+  padding-bottom: 15px;
+}
+
+/* line 60, ../sass/page.scss */
+.videos .vid .v {
+  max-width: 100%;
+  height: 280px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px 1px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px 1px;
+}
+/* line 67, ../sass/page.scss */
+.videos div[class*="col"] {
+  padding-bottom: 30px;
+}
+/* line 73, ../sass/page.scss */
+.videos .desc .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 80, ../sass/page.scss */
+.videos .desc .topics li {
+  margin-left: 15px;
+  padding: 0 0 7px 0;
+}
+/* line 89, ../sass/page.scss */
+.videos .download .name {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+/* line 94, ../sass/page.scss */
+.videos .download .d {
+  margin-left: 15px;
+}
+/* line 97, ../sass/page.scss */
+.videos .download .d li {
+  padding: 0 0 7px 0;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 108, ../sass/page.scss */
+  .videos .vid .v {
+    height: 420px;
+  }
+}
