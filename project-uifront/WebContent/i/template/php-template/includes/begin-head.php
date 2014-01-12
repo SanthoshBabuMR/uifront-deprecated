@@ -1,6 +1,6 @@
 <head>
   <!-- meta data begin -->
-  <link rel="shortcut icon" type="image/x-icon" href="/i/asset/image/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="<?php echo $siteAsset; ?>/image/favicon.ico" />
   <meta charset="utf-8" />
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="keywords" content="<?php echo $keywords ?>" />
