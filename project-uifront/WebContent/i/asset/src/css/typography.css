@@ -1,9 +1,18 @@
-/* line 3, ../sass/typography.scss */
+/*!
+ * typography.scss : include external fonts and specify typography;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* line 8, ../sass/typography.scss */
 html {
   font-size: 13px;
 }
 
-/* line 6, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 body {
   font: 1em/1.5 arial, verdana;
 }

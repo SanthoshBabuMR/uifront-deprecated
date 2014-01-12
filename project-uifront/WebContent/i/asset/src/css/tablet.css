@@ -1,0 +1,37 @@
+/*!
+ * tablet.scss : targets mid screen device(s);
+ * small screen device : 768px - 1199px;
+ * applies to mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+@media only screen and (min-width: 768px) {
+  /* site navigation begin */
+  /* line 16, ../sass/tablet.scss */
+  .site-navigation li {
+    float: left;
+    padding: 0 10px;
+  }
+  /* line 20, ../sass/tablet.scss */
+  .site-navigation li a {
+    width: auto;
+  }
+  /* line 24, ../sass/tablet.scss */
+  .site-navigation li .nav-hook {
+    display: none;
+  }
+  /* line 29, ../sass/tablet.scss */
+  .site-navigation .name a {
+    margin: 0;
+  }
+  /* line 33, ../sass/tablet.scss */
+  .site-navigation .nav {
+    height: auto !important;
+  }
+
+  /* site navigation end */
+}

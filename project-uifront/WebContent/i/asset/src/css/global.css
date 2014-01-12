@@ -1,4 +1,7 @@
 /*!
+ * global.scss : concat all scss file as a single global.scss file
+ */
+/*!
  * Bootstrap v3.0.3 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
@@ -8651,11 +8654,17 @@ td.visible-print {
     display: none !important;
   }
 }
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0b1 | 201101 
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
-/* line 19, ../sass/reset.scss */
+/* line 20, ../sass/reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8678,28 +8687,28 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, ../sass/reset.scss */
+/* line 31, ../sass/reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 33, ../sass/reset.scss */
+/* line 34, ../sass/reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 36, ../sass/reset.scss */
+/* line 37, ../sass/reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 39, ../sass/reset.scss */
+/* line 40, ../sass/reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 43, ../sass/reset.scss */
+/* line 44, ../sass/reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -8707,7 +8716,7 @@ q:before, q:after {
 }
 
 /* remember to define visible focus styles! */
-/* line 49, ../sass/reset.scss */
+/* line 50, ../sass/reset.scss */
 :focus {
   -webkit-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
   -moz-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
@@ -8715,33 +8724,51 @@ q:before, q:after {
 }
 
 /* remember to highlight inserts somehow! */
-/* line 54, ../sass/reset.scss */
+/* line 55, ../sass/reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 57, ../sass/reset.scss */
+/* line 58, ../sass/reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 61, ../sass/reset.scss */
+/* line 62, ../sass/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 3, ../sass/typography.scss */
+/*!
+ * typography.scss : include external fonts and specify typography;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* line 8, ../sass/typography.scss */
 html {
   font-size: 13px;
 }
 
-/* line 6, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 body {
   font: 1em/1.5 arial, verdana;
 }
 
-/* line 7, ../sass/elements.scss */
+/*!
+ * elements.scss : redefine styles for html elements
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* line 10, ../sass/elements.scss */
 *,
 *:before,
 *:after {
@@ -8750,7 +8777,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 12, ../sass/elements.scss */
+/* line 15, ../sass/elements.scss */
 a,
 a:link {
   text-decoration: none;
@@ -8760,37 +8787,48 @@ a:link {
   transition: all 0.3s;
 }
 
-/* line 25, ../sass/elements.scss */
+/* line 28, ../sass/elements.scss */
 img {
   max-width: 100%;
 }
 
-/* common for all devices */
+/*!
+ * base.scss : implicitly targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * put your global declaration here, as we focus towards to a mobile first approach;
+ * applies to small, mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
 /* site navigation begin */
-/* line 7, ../sass/base.scss */
+/* line 12, ../sass/base.scss */
 .site-navigation {
   background: rgba(0, 0, 0, 0.85);
 }
-/* line 9, ../sass/base.scss */
+/* line 14, ../sass/base.scss */
 .site-navigation:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 15, ../sass/base.scss */
+/* line 20, ../sass/base.scss */
 .site-navigation li {
   -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 18, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 .site-navigation li a,
 .site-navigation li a:link {
   display: block;
   padding: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 24, ../sass/base.scss */
+/* line 29, ../sass/base.scss */
 .site-navigation li a:focus, .site-navigation li a:hover,
 .site-navigation li a:link:focus,
 .site-navigation li a:link:hover {
@@ -8800,7 +8838,7 @@ img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 30, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 .site-navigation li a:active,
 .site-navigation li a:link:active {
   color: white;
@@ -8809,11 +8847,11 @@ img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 39, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 .site-navigation .name a {
   margin-right: 60px;
 }
-/* line 43, ../sass/base.scss */
+/* line 48, ../sass/base.scss */
 .site-navigation .name .nav-hook {
   float: right;
   height: 39px;
@@ -8829,7 +8867,7 @@ img {
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 54, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
 .site-navigation .name .nav-hook:after, .site-navigation .name .nav-hook:before {
   content: '';
   display: block;
@@ -8840,11 +8878,11 @@ img {
   width: 24px;
   margin: 0 auto;
 }
-/* line 63, ../sass/base.scss */
+/* line 68, ../sass/base.scss */
 .site-navigation .name .nav-hook:before {
   margin-top: 10px;
 }
-/* line 74, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 .site-navigation .nav {
   height: 0;
   overflow: hidden;
@@ -8853,39 +8891,70 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 80, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 .site-navigation.show-nav .nav {
   /*height: 78px;*/
   /*currently handled using js from global.js*/
 }
 
 /* site navigation end */
-/* mobile */
-/* tablet */
-/* desktop */
-@media only screen and (min-width: 1224px) {
+/*!
+ * mobile.scss : targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * use 'base.scss' for targeting mobile first device & use 'mobile.scss' sparingly
+ * applies to small, mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/*!
+ * tablet.scss : targets mid screen device(s);
+ * small screen device : 768px - 1199px;
+ * applies to mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+@media only screen and (min-width: 768px) {
   /* site navigation begin */
-  /* line 8, ../sass/desktop.scss */
+  /* line 16, ../sass/tablet.scss */
   .site-navigation li {
     float: left;
     padding: 0 10px;
   }
-  /* line 12, ../sass/desktop.scss */
+  /* line 20, ../sass/tablet.scss */
   .site-navigation li a {
     width: auto;
   }
-  /* line 16, ../sass/desktop.scss */
+  /* line 24, ../sass/tablet.scss */
   .site-navigation li .nav-hook {
     display: none;
   }
-  /* line 21, ../sass/desktop.scss */
+  /* line 29, ../sass/tablet.scss */
   .site-navigation .name a {
     margin: 0;
   }
-  /* line 25, ../sass/desktop.scss */
+  /* line 33, ../sass/tablet.scss */
   .site-navigation .nav {
     height: auto !important;
   }
 
   /* site navigation end */
 }
+/*!
+ * tablet.scss : targets large screen device(s);
+ * small screen device : 1200px +;
+ * applies only to large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */

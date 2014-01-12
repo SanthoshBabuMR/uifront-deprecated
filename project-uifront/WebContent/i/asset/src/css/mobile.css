@@ -1,0 +1,12 @@
+/*!
+ * mobile.scss : targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * use 'base.scss' for targeting mobile first device & use 'mobile.scss' sparingly
+ * applies to small, mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */

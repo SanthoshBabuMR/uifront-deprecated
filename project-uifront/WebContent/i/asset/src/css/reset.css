@@ -1,8 +1,14 @@
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0b1 | 201101 
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
-/* line 19, ../sass/reset.scss */
+/* line 20, ../sass/reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,28 +31,28 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, ../sass/reset.scss */
+/* line 31, ../sass/reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 33, ../sass/reset.scss */
+/* line 34, ../sass/reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 36, ../sass/reset.scss */
+/* line 37, ../sass/reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 39, ../sass/reset.scss */
+/* line 40, ../sass/reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 43, ../sass/reset.scss */
+/* line 44, ../sass/reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -54,7 +60,7 @@ q:before, q:after {
 }
 
 /* remember to define visible focus styles! */
-/* line 49, ../sass/reset.scss */
+/* line 50, ../sass/reset.scss */
 :focus {
   -webkit-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
   -moz-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
@@ -62,17 +68,17 @@ q:before, q:after {
 }
 
 /* remember to highlight inserts somehow! */
-/* line 54, ../sass/reset.scss */
+/* line 55, ../sass/reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 57, ../sass/reset.scss */
+/* line 58, ../sass/reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 61, ../sass/reset.scss */
+/* line 62, ../sass/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

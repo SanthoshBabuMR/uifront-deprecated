@@ -1,4 +1,13 @@
-/* line 7, ../sass/elements.scss */
+/*!
+ * elements.scss : redefine styles for html elements
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* line 10, ../sass/elements.scss */
 *,
 *:before,
 *:after {
@@ -7,7 +16,7 @@
   box-sizing: border-box;
 }
 
-/* line 12, ../sass/elements.scss */
+/* line 15, ../sass/elements.scss */
 a,
 a:link {
   text-decoration: none;
@@ -17,7 +26,7 @@ a:link {
   transition: all 0.3s;
 }
 
-/* line 25, ../sass/elements.scss */
+/* line 28, ../sass/elements.scss */
 img {
   max-width: 100%;
 }

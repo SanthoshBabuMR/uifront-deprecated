@@ -1,28 +1,40 @@
+/*!
+ * base.scss : implicitly targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * put your global declaration here, as we focus towards to a mobile first approach;
+ * applies to small, mid, large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
 /* site navigation begin */
-/* line 7, ../sass/base.scss */
+/* line 12, ../sass/base.scss */
 .site-navigation {
   background: rgba(0, 0, 0, 0.85);
 }
-/* line 9, ../sass/base.scss */
+/* line 14, ../sass/base.scss */
 .site-navigation:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 15, ../sass/base.scss */
+/* line 20, ../sass/base.scss */
 .site-navigation li {
   -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 18, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 .site-navigation li a,
 .site-navigation li a:link {
   display: block;
   padding: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 24, ../sass/base.scss */
+/* line 29, ../sass/base.scss */
 .site-navigation li a:focus, .site-navigation li a:hover,
 .site-navigation li a:link:focus,
 .site-navigation li a:link:hover {
@@ -32,7 +44,7 @@
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 30, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 .site-navigation li a:active,
 .site-navigation li a:link:active {
   color: white;
@@ -41,11 +53,11 @@
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 39, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 .site-navigation .name a {
   margin-right: 60px;
 }
-/* line 43, ../sass/base.scss */
+/* line 48, ../sass/base.scss */
 .site-navigation .name .nav-hook {
   float: right;
   height: 39px;
@@ -61,7 +73,7 @@
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 54, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
 .site-navigation .name .nav-hook:after, .site-navigation .name .nav-hook:before {
   content: '';
   display: block;
@@ -72,11 +84,11 @@
   width: 24px;
   margin: 0 auto;
 }
-/* line 63, ../sass/base.scss */
+/* line 68, ../sass/base.scss */
 .site-navigation .name .nav-hook:before {
   margin-top: 10px;
 }
-/* line 74, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 .site-navigation .nav {
   height: 0;
   overflow: hidden;
@@ -85,7 +97,7 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 80, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 .site-navigation.show-nav .nav {
   /*height: 78px;*/
   /*currently handled using js from global.js*/

@@ -1,26 +1,11 @@
-@media only screen and (min-width: 1224px) {
-  /* site navigation begin */
-  /* line 8, ../sass/desktop.scss */
-  .site-navigation li {
-    float: left;
-    padding: 0 10px;
-  }
-  /* line 12, ../sass/desktop.scss */
-  .site-navigation li a {
-    width: auto;
-  }
-  /* line 16, ../sass/desktop.scss */
-  .site-navigation li .nav-hook {
-    display: none;
-  }
-  /* line 21, ../sass/desktop.scss */
-  .site-navigation .name a {
-    margin: 0;
-  }
-  /* line 25, ../sass/desktop.scss */
-  .site-navigation .nav {
-    height: auto !important;
-  }
-
-  /* site navigation end */
-}
+/*!
+ * tablet.scss : targets large screen device(s);
+ * small screen device : 1200px +;
+ * applies only to large screen devices;
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/*!
+ * _include.scss : list of sass imports;
+ */
