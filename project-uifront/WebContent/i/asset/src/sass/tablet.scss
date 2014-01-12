@@ -1,7 +1,40 @@
-@import '_config';
+/*!
+ * tablet.scss : targets mid screen device(s);
+ * small screen device : 768px - 1199px;
+ * applies to mid, large screen devices;
+ */
+
+@import "_config";
+@import "_include";
 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+and (min-width : 768px) {
+
+  /* site navigation begin */
+  .site-navigation {
+    
+    li {
+      float: left;
+      padding: 0 10px;
+      
+      a {
+        width: auto;
+      }
+      
+      .nav-hook {
+        display: none;
+      }
+    }  
+    
+    .name a {
+      margin: 0;
+    }
+    
+    .nav {
+      height: auto !important;
+    }
+    
+  }
+  /* site navigation end */
   
 }

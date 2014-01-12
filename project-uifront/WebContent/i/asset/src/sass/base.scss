@@ -1,7 +1,12 @@
-@import '_config';
-@import "compass/css3/box-shadow";
-@import "compass/css3/transform";
-@import "compass/css3/transition";
+/*!
+ * base.scss : implicitly targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * put your global declaration here, as we focus towards to a mobile first approach;
+ * applies to small, mid, large screen devices;
+ */
+
+@import "_config";
+@import "_include";
 
 /* site navigation begin */
 .site-navigation {

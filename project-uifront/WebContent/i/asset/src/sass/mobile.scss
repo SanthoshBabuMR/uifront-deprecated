@@ -1,1 +1,14 @@
-@import 'config';
+/*!
+ * mobile.scss : targets small screen device(s);
+ * small screen device : 320px - 767px;
+ * use 'base.scss' for targeting mobile first device & use 'mobile.scss' sparingly
+ * applies to small, mid, large screen devices;
+ */
+
+@import "_config";
+@import "_include";
+
+@media only screen 
+and (min-width : 320px) {
+
+}

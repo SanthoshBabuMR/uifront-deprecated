@@ -1,7 +1,10 @@
-@import '_config';
-@import "compass/css3/box-sizing";
-@import "compass/css3/transition";
-  
+/*!
+ * elements.scss : redefine styles for html elements
+ */
+ 
+@import "_config";
+@import "_include";
+ 
 *,
 *:before,
 *:after {

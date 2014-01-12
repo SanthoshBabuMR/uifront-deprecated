@@ -1,4 +1,9 @@
-@import 'config';
+/*!
+ * typography.scss : include external fonts and specify typography;
+ */
+
+@import "_config";
+@import "_include";
 
 html {
   font-size: 13px;
