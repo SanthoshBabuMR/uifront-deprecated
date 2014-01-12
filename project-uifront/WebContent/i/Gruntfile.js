@@ -2,8 +2,9 @@ module.exports = function (grunt) {
   'use strict';
   var page = grunt.file.readJSON('config/page.json');
 
-  var pageFullPath = page.srcPath + '/' + page.srcDocument;
-  var pageName = page.srcDocument;
+  var pageDir = page.srcPath;
+	var pageName = page.srcDocument;
+  var pageFullPath = pageDir + '/' + pageName;
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -26,7 +27,7 @@ module.exports = function (grunt) {
         files: {
           'asset/build/css/global.css': ['asset/src/css/global.css'],
           // specify current document path for cssmin
-          'tech-guru/brendan-eich/asset/build/css/page.css': ['tech-guru/brendan-eich/asset/src/css/page.css']
+          'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
         }
       }
     },
@@ -69,13 +70,20 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      compileSass: {
-        files: ['asset/src/sass/*.scss', pageFullPath + '/' + pageFullPath + '/asset/src/sass/*.scss'],
-        tasks: ['compass'],
+      site: {
+        files: ['asset/src/sass/*.scss'],
+        tasks: ['compass:compileSite'],
         options: {
           livereload: true,
         }
-      }
+      },
+			doc: {
+        files: [pageFullPath + '/asset/src/sass/*.scss'],
+        tasks: ['compass:compileDoc'],
+        options: {
+          livereload: true,
+        }
+      },
     },
     responsive_images: {
       siteImage: {
@@ -134,7 +142,7 @@ module.exports = function (grunt) {
       template: {
     	dot: true,
     	files: [
-	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: 'dev-env/'+ pageName +'/' }
+	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: pageFullPath + '/' }
 	    ] 
       }
     }
