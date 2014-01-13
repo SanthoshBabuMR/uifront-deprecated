@@ -8,6 +8,8 @@
 	"siteAsset": "/i/asset/src",
 	"siteAssetMin": "/i/asset/build",
 	"pageAsset": "asset/src",
-	"pageAssetMin": "asset/build"
+	"pageAssetMin": "asset/build",
+	
+	"cacheBusting" : 1
 	
 }

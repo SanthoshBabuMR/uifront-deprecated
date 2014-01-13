@@ -24,6 +24,16 @@ else {
 	$pageAsset = $config["pageAssetMin"];
 }
 
+# cache busting
+$cacheBusting = $config["cacheBusting"];
+if($cacheBusting == 1) {
+	$v = "?v=".date_format(date_create(), 'ymdhis');
+}
+else {
+	$v = "";
+}
+
+
 # uncomment below to test for errors
 #echo "debug : ".$pageConfig["debug"];
 #echo "<br />";

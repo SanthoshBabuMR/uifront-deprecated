@@ -7,11 +7,11 @@
   $meta = "
   ";
   $css = "
-  <link rel=\"stylesheet\" href=\"$pageAsset/css/page.css\" />
+  <link rel=\"stylesheet\" href=\"$pageAsset/css/page.css$v\" />
   ";
   $script = "
-  <script src=\"$siteAsset/script/lib/require.js\"></script>
-  <script src=\"$pageAsset/script/page.js\"></script>
+  <script src=\"$siteAsset/script/lib/require.js$v\"></script>
+  <script src=\"$pageAsset/script/page.js$v\"></script>
   ";
   $pageIdentifier= "tech-gurus";
   $articleHeading = "Brendan Eich";
