@@ -8820,31 +8820,32 @@ img {
 /*!
  * _include.scss : list of sass imports;
  */
-/* site navigation begin */
-/* line 12, ../sass/base.scss */
-.site-navigation {
+/* line 11, ../sass/base.scss */
+.site-header {
   background: rgba(0, 0, 0, 0.85);
 }
-/* line 14, ../sass/base.scss */
+
+/* site navigation begin */
+/* line 18, ../sass/base.scss */
 .site-navigation:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 20, ../sass/base.scss */
+/* line 24, ../sass/base.scss */
 .site-navigation li {
   -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 23, ../sass/base.scss */
+/* line 27, ../sass/base.scss */
 .site-navigation li a,
 .site-navigation li a:link {
   display: block;
   padding: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 29, ../sass/base.scss */
+/* line 33, ../sass/base.scss */
 .site-navigation li a:focus, .site-navigation li a:hover,
 .site-navigation li a:link:focus,
 .site-navigation li a:link:hover {
@@ -8854,7 +8855,7 @@ img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 35, ../sass/base.scss */
+/* line 39, ../sass/base.scss */
 .site-navigation li a:active,
 .site-navigation li a:link:active {
   color: white;
@@ -8863,11 +8864,11 @@ img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px inset, black 0 0 2px;
 }
-/* line 44, ../sass/base.scss */
+/* line 48, ../sass/base.scss */
 .site-navigation .name a {
   margin-right: 60px;
 }
-/* line 48, ../sass/base.scss */
+/* line 52, ../sass/base.scss */
 .site-navigation .name .nav-hook {
   float: right;
   height: 39px;
@@ -8883,7 +8884,7 @@ img {
   -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, black 0 -1px 0px inset;
 }
-/* line 59, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 .site-navigation .name .nav-hook:after, .site-navigation .name .nav-hook:before {
   content: '';
   display: block;
@@ -8894,11 +8895,11 @@ img {
   width: 24px;
   margin: 0 auto;
 }
-/* line 68, ../sass/base.scss */
+/* line 72, ../sass/base.scss */
 .site-navigation .name .nav-hook:before {
   margin-top: 10px;
 }
-/* line 79, ../sass/base.scss */
+/* line 83, ../sass/base.scss */
 .site-navigation .nav {
   height: 0;
   overflow: hidden;
@@ -8907,7 +8908,7 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 85, ../sass/base.scss */
+/* line 89, ../sass/base.scss */
 .site-navigation.show-nav .nav {
   /*height: 78px;*/
   /*currently handled using js from global.js*/
@@ -8960,11 +8961,15 @@ img {
   .site-navigation li .nav-hook {
     display: none;
   }
-  /* line 29, ../sass/tablet.scss */
+  /* line 31, ../sass/tablet.scss */
   .site-navigation .name a {
     margin: 0;
   }
-  /* line 33, ../sass/tablet.scss */
+  /* line 35, ../sass/tablet.scss */
+  .site-navigation .name li {
+    padding: 0 10px 0 0;
+  }
+  /* line 40, ../sass/tablet.scss */
   .site-navigation .nav {
     height: auto !important;
   }

@@ -26,12 +26,19 @@ and (min-width : $mdMinWidth) {
       }
     }  
     
-    .name a {
-      margin: 0;
+    .name {
+    
+      a {
+        margin: 0;
+      }
+    
+      li {
+         padding: 0 10px 0 0;
+      }
     }
     
     .nav {
-      height: auto !important;
+      height: auto !important; 
     }
     
   }

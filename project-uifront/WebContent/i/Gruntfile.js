@@ -28,12 +28,11 @@ module.exports = function (grunt) {
           'asset/build/css/global.css': ['asset/src/css/global.css'],
           // specify current document path for cssmin
 		  //'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
-		  'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
         }
       }
     },
     uglify: {
-      minifySiteJs: {
+      site: {
         options: {
           beautify: false
         },
@@ -44,7 +43,7 @@ module.exports = function (grunt) {
           dest: 'asset/build/script',
         }]
       },
-      minifyDocJs: {
+      doc: {
         options: {
           beautify: false
         },
@@ -57,13 +56,13 @@ module.exports = function (grunt) {
       }
     },
     compass: {
-      compileSite: {
+      site: {
         options: {
           sassDir: ['asset/src/sass/'],
           cssDir: ['asset/src/css/']
         }
       },
-      compileDoc: {
+      doc: {
         options: {
           sassDir: [pageFullPath + '/asset/src/sass/'],
           cssDir: [pageFullPath + '/asset/src/css/']
@@ -73,21 +72,21 @@ module.exports = function (grunt) {
     watch: {
       site: {
         files: ['asset/src/sass/*.scss'],
-        tasks: ['compass:compileSite'],
+        tasks: ['compass:site'],
         options: {
           livereload: true,
         }
       },
 			doc: {
         files: [pageFullPath + '/asset/src/sass/*.scss'],
-        tasks: ['compass:compileDoc'],
+        tasks: ['compass:doc'],
         options: {
           livereload: true,
         }
       },
     },
     responsive_images: {
-      siteImage: {
+      site: {
         options: {
           sizes: [{
             name: "small",
@@ -110,7 +109,7 @@ module.exports = function (grunt) {
           custom_dest: 'asset/src/image/{%= name %}/'
         }]
       },
-      pageImage: {
+      doc: {
         options: {
           sizes: [{
             name: "small",
@@ -135,7 +134,7 @@ module.exports = function (grunt) {
       }
     },
     copy: {
-      pageImage: {
+      docImage: {
         files: [
           {expand: true, cwd: pageFullPath + '/asset/src/image/', src: ['**'], dest: pageFullPath + '/asset/build/image/' }
         ]
@@ -157,16 +156,23 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
+  // server
   grunt.registerTask('server', ['connect']);
-  grunt.registerTask('runcssmin', ['cssmin']);      // minify css
-  grunt.registerTask('runcompass', ['compass']);    // compile scss to css
-  grunt.registerTask('runwatch', ['watch']);        // watch for scss file modification
-  grunt.registerTask('runuglify', ['uglify']);      // minify js
-  grunt.registerTask('runresimages', ['responsive_images']); 
-  grunt.registerTask('runcopy', ['copy']); 
-  grunt.registerTask('default', ['runcompass', 'runcssmin', 'runuglify']); // compile sass, minify css, minify js
+  // minify css
+  grunt.registerTask('runcssmin', ['cssmin']);
+  // compile scss to css
+  grunt.registerTask('runcompass', ['compass']);   
+  // watch for scss file modification
+  grunt.registerTask('runwatch', ['watch']);       
+  // minify js
+  grunt.registerTask('runuglify', ['uglify']);     
+  // make responsive images
+  grunt.registerTask('runresimages', ['responsive_images']);
+  // copy docImage(s) / template
+  grunt.registerTask('runcopy', ['copy']);         
+  grunt.registerTask('default', ['compass:doc', 'compass:site', 'cssmin', 'uglify:doc', 'uglify:site']);
   
-  // running a sub task
+  // run a sub task
   // eg: grunt uglify:minifyDocJs
 
 };

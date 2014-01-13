@@ -1,8 +1,8 @@
 
   <header class="site-header">
 	<!-- site-header begin -->
-    <!--<div class="container">-->
+    <div class="container">
       <?php include "navigation.php"; ?>
-	<!--</div>-->
+	</div>
   <!-- site-header end -->  
   </header>

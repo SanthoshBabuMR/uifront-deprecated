@@ -8,9 +8,13 @@
 @import "_config";
 @import "_include";
 
+.site-header {
+  background: rgba(0, 0, 0, 0.85);
+}
+
 /* site navigation begin */
 .site-navigation {
-  background: rgba(0, 0, 0, 0.85);
+  
   &:after {
     content: "";
     clear: both;

@@ -5,13 +5,15 @@
 	<?php include "header.php"; ?>
 	<section class="site-content">
     <!-- site-content begin -->
-      <div class="container">
+      <!--<div class="container">-->
       <!-- container begin -->
         
         <div class="page-header">
         <!-- page-header begin -->
-          <h1 class="page-title"><?php echo $articleHeading?></h1>
-          <span class="pubdate"><?php echo $articlePubDate?></span>
+          <div class="container">
+            <h1 class="page-title"><?php echo $articleHeading?></h1>
+            <span class="pubdate"><?php echo $articlePubDate?></span>
+          </div>
         <!-- page-header end -->
         </div>
         
@@ -22,7 +24,7 @@
         </div>
         
       <!-- container end -->  
-      </div>
+      <!--</div>-->
     <!-- site-content end -->
     </section>
     <?php include "footer.php"; ?>
