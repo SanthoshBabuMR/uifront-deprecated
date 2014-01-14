@@ -1,0 +1,19 @@
+/*!
+ * layout.scss : styles for page layout components
+ */
+ 
+@import "../config/_config";
+@import "../config/_include";
+
+.page-header {
+  border-bottom: 1px solid #CCCCCC;
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  .pubdate {
+    color: #999;
+  }
+
+}
