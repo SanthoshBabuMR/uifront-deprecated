@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   var page = grunt.file.readJSON('config/page.json');
 
   var pageDir = page.srcPath;
-	var pageName = page.srcDocument;
+        var pageName = page.srcDocument;
   var pageFullPath = pageDir + '/' + pageName;
 
   grunt.initConfig({
@@ -28,9 +28,8 @@ module.exports = function (grunt) {
           // global site css
           'asset/build/css/global.css': ['asset/src/css/global.css'],
           // global modules
-		  'asset/build/css/modules/videos.css': ['asset/src/css/modules/videos.css'],
+          'asset/build/css/modules/videos.css': ['asset/src/css/modules/videos.css'],
           // specify current document path for cssmin
-		  //'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
         }
       }
     },
@@ -80,7 +79,7 @@ module.exports = function (grunt) {
           livereload: true,
         }
       },
-			doc: {
+                        doc: {
         files: [pageFullPath + '/asset/src/sass/*.scss'],
         tasks: ['compass:doc'],
         options: {
@@ -143,10 +142,10 @@ module.exports = function (grunt) {
         ]
       },
       template: {
-    	dot: true,
-    	files: [
-	      {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: pageFullPath + '/' }
-	    ] 
+            dot: true,
+            files: [
+              {expand: true, cwd: 'template/html-template/', src: ['**','**/.dir'], dest: pageFullPath + '/' }
+            ] 
       }
     }
   });
