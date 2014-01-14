@@ -7,6 +7,7 @@
   $meta = "
   ";
   $css = "
+  <link rel=\"stylesheet\" href=\"$siteAsset/css/modules/videos.css$v\" />
   <link rel=\"stylesheet\" href=\"$pageAsset/css/page.css$v\" />
   ";
   $script = "

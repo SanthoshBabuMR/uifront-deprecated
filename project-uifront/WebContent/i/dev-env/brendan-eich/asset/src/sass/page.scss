@@ -2,6 +2,7 @@
 @import "compass/css3/transform";
 @import "compass/css3/box-shadow";
 
+
 .page-header {
 	border-bottom: 1px solid #CCCCCC;
 	.page-title {
@@ -61,99 +62,6 @@ h2 {
   padding-bottom: 15px;
 }
 
-.videos {
-	
-	.grp {
-	  border-bottom: 1px solid #CCCCCC;
-	  
-	  &:after {
-	    content: "";
-	    display: block;
-	    clear: both;
-	  }
-	  
-	}
-	
-	.vid {
-
-		.v {
-			max-width: 100%;
-			height: 280px;
-			@include box-shadow(rgba(0,0,0,0.5) 0 2px 4px 1px);
-		}
-		
-	}
-	
-	div[class*="col"] {
-	  padding-bottom: 15px;
-	}
-
-	.desc {
-	
-		.name {
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		
-		.topics {
-			
-			li {
-				margin-left: 15px;
-				padding: 0 0 7px 0;
-			}
-			
-		}
-		
-	}
-	
-	.download {
-	
-		.name {
-			font-weight: bold;
-			margin: 0 0 10px 0;
-		}
-		
-		.d {
-			margin-left: 15px;
-			
-			li {
-				padding: 0 0 7px 0;
-			}		
-				
-		}
-	}
-}
-
-
-@media screen and ( min-width: 480px ) {
-	.videos {
-	
-		.vid {
-		
-			.v {
-				height: 420px;
-			}
-			
-		}	
-		
-	}
-	
-}
-
-@media screen and ( min-width: 320px ) and ( max-width: 970px ) {
-	.videos {
-	
-		.desc .topics li:last-child {
-			padding: 0;
-		}
-		
-		.download .d li:last-child {
-			padding: 0;
-		}
-		
-	}
-	
-}
 
 @media screen and ( min-width: 300px ) and ( max-width: 320px ) {
 	
