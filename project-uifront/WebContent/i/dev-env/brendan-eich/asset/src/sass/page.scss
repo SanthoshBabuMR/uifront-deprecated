@@ -2,17 +2,6 @@
 @import "compass/css3/transform";
 @import "compass/css3/box-shadow";
 
-
-.page-header {
-	border-bottom: 1px solid #CCCCCC;
-	.page-title {
-		font-size: 2em;
-	}
-	.pubdate {
-		color: #999;
-	}
-}
-
 .about {
 
 	padding-bottom: 15px;
@@ -49,21 +38,12 @@
 	
 }
 
-h2 {
-	
-	&.title {
-		font-size: 1.5em;
-		padding: 7px 0;
-	}
-	
-}
-
 .info {
   padding-bottom: 15px;
 }
 
 
-@media screen and ( min-width: 300px ) and ( max-width: 320px ) {
+@media screen and ( min-width: 0px ) and ( max-width: 320px ) {
 	
   .about .container .row > * {
     width: 100%;

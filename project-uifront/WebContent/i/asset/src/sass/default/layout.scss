@@ -7,7 +7,8 @@
 
 .page-header {
   border-bottom: 1px solid #CCCCCC;
-
+  margin: 20px 0 20px;
+  
   .page-title {
     font-size: 2em;
   }
@@ -16,4 +17,14 @@
     color: #999;
   }
 
+}
+
+
+h2 {
+	
+	&.title {
+		font-size: 1.5em;
+		padding: 7px 0;
+	}
+	
 }

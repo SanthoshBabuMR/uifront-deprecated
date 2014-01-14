@@ -14,12 +14,19 @@
 /* line 8, ../../sass/default/layout.scss */
 .page-header {
   border-bottom: 1px solid #CCCCCC;
+  margin: 20px 0 20px;
 }
-/* line 10, ../../sass/default/layout.scss */
+/* line 12, ../../sass/default/layout.scss */
 .page-header .page-title {
   font-size: 2em;
 }
-/* line 13, ../../sass/default/layout.scss */
+/* line 16, ../../sass/default/layout.scss */
 .page-header .pubdate {
   color: #999;
+}
+
+/* line 25, ../../sass/default/layout.scss */
+h2.title {
+  font-size: 1.5em;
+  padding: 7px 0;
 }
