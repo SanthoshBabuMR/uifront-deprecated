@@ -1,0 +1,30 @@
+/*!
+ * elements.scss : redefine styles for html elements
+ */
+ 
+@import "../config/_config";
+@import "../config/_include";
+ 
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+a,
+a:link {
+  text-decoration: none;
+  @include transition(compact(all 0.3s));
+  
+  &:focus,
+  &:hover {
+    
+  }    
+  
+  &:active {
+  }
+}
+
+img {
+  max-width: 100%;
+}

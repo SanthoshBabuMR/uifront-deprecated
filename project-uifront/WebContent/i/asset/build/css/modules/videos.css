@@ -1,0 +1,9 @@
+/*! uifront:minified css file; 2014-01-14 */
+
+/*!
+ * videos.scss : layout for including videos
+ *//*!
+ * _config.scss : sass variable declaration;
+ *//*!
+ * _include.scss : list of sass imports;
+ */.videos .grp{border-bottom:1px solid #CCC}.videos .grp:after{content:"";display:block;clear:both}.videos .vid .v{max-width:100%;height:280px;-webkit-box-shadow:rgba(0,0,0,.5) 0 2px 4px 1px;-moz-box-shadow:rgba(0,0,0,.5) 0 2px 4px 1px;box-shadow:rgba(0,0,0,.5) 0 2px 4px 1px}.videos div[class*=col]{padding-bottom:15px}.videos .desc .name{font-weight:700;margin-bottom:10px}.videos .desc .topics li{margin-left:15px;padding:0 0 7px}.videos .download .name{font-weight:700;margin:0 0 10px}.videos .download .d{margin-left:15px}.videos .download .d li{padding:0 0 7px}@media screen and (min-width:480px){.videos .vid .v{height:420px}}@media screen and (min-width:320px) and (max-width:970px){.videos .desc .topics li:last-child,.videos .download .d li:last-child{padding:0}}

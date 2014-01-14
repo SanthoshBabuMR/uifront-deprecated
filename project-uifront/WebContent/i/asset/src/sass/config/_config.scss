@@ -1,0 +1,16 @@
+/*!
+ * _config.scss : sass variable declaration;
+ */
+ 
+/* breakpoints begin */
+$smMinWidth : 320px;
+$smMaxWidth : 767px;
+$mdMinWidth : 768px;
+$mdMaxWidth : 1199px;
+$lgMinWidth : 1200px;
+$lgMaxWidth : 1600px;
+/* breakpoints end */
+
+/* typography begin */
+$baseFont: 13px;
+/* typography end */

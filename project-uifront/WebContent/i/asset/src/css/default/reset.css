@@ -1,0 +1,89 @@
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/* breakpoints begin */
+/* breakpoints end */
+/* typography begin */
+/* typography end */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 20, ../../sass/default/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 31, ../../sass/default/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, ../../sass/default/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../../sass/default/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../../sass/default/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 44, ../../sass/default/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define visible focus styles! */
+/* line 50, ../../sass/default/reset.scss */
+:focus {
+  -webkit-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
+  -moz-box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
+  box-shadow: rgba(230, 110, 31, 0.89) 0 1px 3px;
+}
+
+/* remember to highlight inserts somehow! */
+/* line 55, ../../sass/default/reset.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 58, ../../sass/default/reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 62, ../../sass/default/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

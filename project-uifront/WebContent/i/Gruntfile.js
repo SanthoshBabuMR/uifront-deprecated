@@ -25,7 +25,10 @@ module.exports = function (grunt) {
           banner: '/*! <%= pkg.name %>:minified css file; <%= grunt.template.today("yyyy-mm-dd") %> */\n'
         },
         files: {
+          // global site css
           'asset/build/css/global.css': ['asset/src/css/global.css'],
+          // global modules
+		  'asset/build/css/modules/videos.css': ['asset/src/css/modules/videos.css'],
           // specify current document path for cssmin
 		  //'env-name/document-name/asset/build/css/page.css': ['env-name/document-name/asset/src/css/page.css']
         }

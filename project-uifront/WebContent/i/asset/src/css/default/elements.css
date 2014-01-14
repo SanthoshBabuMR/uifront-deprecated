@@ -1,0 +1,36 @@
+/*!
+ * elements.scss : redefine styles for html elements
+ */
+/*!
+ * _config.scss : sass variable declaration;
+ */
+/* breakpoints begin */
+/* breakpoints end */
+/* typography begin */
+/* typography end */
+/*!
+ * _include.scss : list of sass imports;
+ */
+/* line 10, ../../sass/default/elements.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../../sass/default/elements.scss */
+a,
+a:link {
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 28, ../../sass/default/elements.scss */
+img {
+  max-width: 100%;
+}

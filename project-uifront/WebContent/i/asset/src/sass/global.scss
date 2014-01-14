@@ -2,11 +2,11 @@
  * global.scss : concat all scss file as a single global.scss file
  */
 
-@import "bootstrap";
-@import "reset";
-@import "typography";
-@import "elements";
-@import "base";
-@import "mobile";
-@import "tablet";
-@import "desktop";
+@import "framework/bootstrap";
+@import "default/reset";
+@import "default/typography";
+@import "default/elements";
+@import "default/base";
+@import "devices/mobile";
+@import "devices/tablet";
+@import "devices/desktop";

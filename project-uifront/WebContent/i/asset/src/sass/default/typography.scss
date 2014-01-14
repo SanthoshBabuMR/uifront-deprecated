@@ -1,0 +1,13 @@
+/*!
+ * typography.scss : include external fonts and specify typography;
+ */
+
+@import "../config/_config";
+@import "../config/_include";
+
+html {
+  font-size: 13px;
+}
+body {
+  font: 1em/1.5 arial, verdana;
+}

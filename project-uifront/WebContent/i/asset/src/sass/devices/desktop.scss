@@ -1,0 +1,13 @@
+/*!
+ * tablet.scss : targets large screen device(s);
+ * small screen device : 1200px +;
+ * applies only to large screen devices;
+ */
+
+@import "../config/_config";
+@import "../config/_include";
+
+@media only screen 
+and (min-width : $lgMinWidth) {
+  
+}
